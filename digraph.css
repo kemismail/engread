@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.digraph-header {
+  text-align: center;
+  align-items: center;
+  background-color: #2d336b;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  width: 100%;
+}
+
+.inline-flex-container {
+  display: flex;
+  background-color: rgba(200, 200, 200, 0.7);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.digraph-box {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: 40px;
+  color: white;
+  gap: 2px;
+  text-align: center;
+}
+
+.digraph-box > div {
+  font-size: 1.5rem;
+}
+
+.digraph-word {
+  background-color: #a9b5df;
+  letter-spacing: 2px;
+  padding-top: 0.5rem;
+}
+
+.digraph-word-title {
+  background-color: #7886c7;
+  grid-column: span 3;
+}
+
+.digraph {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 412px) {
+  .digraph-box {
+    flex: 100%;
+  }
+}

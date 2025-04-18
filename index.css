@@ -1,0 +1,161 @@
+body {
+  margin: 0px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.alphabets-header {
+  text-align: center;
+  align-items: center;
+  background-color: #2d336b;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding: 5px 0px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.circle {
+  width: 25px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: red;
+  justify-self: center;
+  align-self: baseline;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.alphabets-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  top: 3rem;
+  position: absolute;
+}
+
+.inline-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  gap: 5px;
+}
+
+.alphabet-letter {
+  background-color: #7886c7;
+  flex-basis: 24%;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0px;
+  font-size: 2rem;
+}
+
+.ipa-title {
+  background-color: #7886c7;
+  grid-column: span 4;
+  padding-top: 0.5rem;
+  color: white;
+  justify-content: center;
+}
+
+.ipa-box-consonants {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  color: white;
+  text-align: center;
+  grid-gap: 2px;
+  padding: 0px;
+  flex: 1 1 33%;
+  order: 1;
+}
+
+.ipa-box-vowel {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  color: white;
+  text-align: center;
+  grid-gap: 2px;
+  padding: 0px;
+  flex: 1 1 33%;
+  order: 2;
+}
+
+.ipa-box-r-controlled {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  color: white;
+  text-align: center;
+  grid-gap: 2px;
+  padding: 0px;
+  flex: 1 1 33%;
+  order: 3;
+}
+
+.ipa-box-vowel > div {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ipa-box-consonants > div {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ipa-box-r-controlled > div {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ipa-letter {
+  background-color: #a9b5df;
+  letter-spacing: 2px;
+  padding-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.ipa-letter p {
+  font-size: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+.ipa-letter:hover {
+  background-color: green;
+  cursor: default;
+}
+
+@media (max-width: 412px) {
+  .ipa-box-consonants {
+    flex: 100%;
+  }
+
+  .ipa-box-vowel {
+    flex: 100%;
+  }
+
+  .ipa-box-r-controlled {
+    flex: 100%;
+  }
+}
